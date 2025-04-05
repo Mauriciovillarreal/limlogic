@@ -7,7 +7,6 @@ import PrivateRoute from './routes/PrivateRoute';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './components/NavbarComponent/NavbarComponent';
 
-
 function App() {
   return (
     <>
