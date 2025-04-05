@@ -1,0 +1,81 @@
+
+
+.navbar-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Solo dos columnas: izq y der */
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+/* Estilo del logo centrado */
+/* Centrado vertical del logo */
+.logo-center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .logo-center h1 {
+    margin-top: 6px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    color: #F4701F;
+    text-align: center;
+    line-height: 0.8;
+    font-weight: bold;
+  }
+  .logoAzul {
+    font-size: 35px;
+    background: linear-gradient(90deg, #4BB1D4, #2B6F94);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+  }
+  
+/* Estilo del carrito */
+.cart-button {
+    justify-self: start;
+    border: none;
+    background: #fff;
+    font-size: 20px;
+}
+
+/* Estilo del toggle (menú hamburguesa) */
+.navbar-layout .navbar-toggler {
+    justify-self: end;
+    border: none;
+}
+
+/* Opcional: ajustar el collapse para que no quede todo amontonado */
+
+
+.navbar-custom .nav-link {
+    margin-right: 1rem;
+}
+
+.cart-badge {
+    font-size: 14px;
+    margin-left: 4px;
+    color: #F4701F;
+    font-weight: bold;
+    border: none !important;
+}
+
+
+.cart-button {
+
+    border: none !important;
+    margin-top: -1px;
+    margin-left: 5px;
+}
+
+.navbar-custom {
+    position: sticky; /* o "sticky" si preferís que se quede al llegar arriba */
+    top: 0;
+    width: 100%;
+    z-index: 1050;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+  
