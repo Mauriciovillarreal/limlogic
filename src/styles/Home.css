@@ -3,7 +3,6 @@
 }
 
 .home-container {
-    margin-top: 50px;
     background-color: #e7e7e7;
     padding: 8px;
 }
@@ -123,7 +122,9 @@
     color: #2B6F94; /* Azul fuerte */
     pointer-events: none;
   }
-  
+  .offcanvas-body {
+    z-index: 9999;
+  }
 
 /* Media query for mobile devices (adjust breakpoint as needed) */
 @media (max-width: 768px) {
