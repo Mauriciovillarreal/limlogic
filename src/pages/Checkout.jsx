@@ -138,7 +138,7 @@ const Checkout = () => {
                                             value="Efectivo"
                                             onChange={(e) => setPago(e.target.value)}
                                         />
-                                        <h6>Se abona la totalidad en la sucursal o al momento de recivir</h6>
+                                        <h6>Se abona la totalidad en la sucursal o al momento de recibir</h6>
                                     </div>
                                     <div className="container-option">
                                         <Form.Check
