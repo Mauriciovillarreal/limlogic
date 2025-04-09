@@ -161,7 +161,7 @@ const Checkout = () => {
                                             value="Tarjeta"
                                             onChange={(e) => setPago(e.target.value)}
                                         />
-                                        <h6>Se abona la totalidad en la sucursal o al momento de recivir</h6>
+                                        <h6>Se abona la totalidad en la sucursal o al momento de recibir</h6>
                                     </div>
 
 
