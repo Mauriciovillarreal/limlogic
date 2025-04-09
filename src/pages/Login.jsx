@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
 import { signIn } from '../services/authService';
 import { useNavigate } from 'react-router-dom';
+import '../styles/Login.css';
 
 const Login = () => {
   const navigate = useNavigate();
@@ -21,8 +22,7 @@ const Login = () => {
   };
 
   return (
-    <Container className="mt-4" style={{ maxWidth: '400px' , paddingTop:'34px' }}>
-      <h2>Login operador</h2>
+    <Container className="mt-4 container-login" style={{ maxWidth: '400px'}}>
       {error && <Alert variant="danger">{error}</Alert>}
       <Form onSubmit={handleLogin}>
         <Form.Group className="mb-3">
@@ -33,7 +33,7 @@ const Login = () => {
           <Form.Label>Contraseña</Form.Label>
           <Form.Control type="password" onChange={e => setPassword(e.target.value)} required />
         </Form.Group>
-        <Button type="submit" variant="primary">Ingresar</Button>
+        <Button type="submit" variant="dark">Ingresar</Button>
       </Form>
     </Container>
   );

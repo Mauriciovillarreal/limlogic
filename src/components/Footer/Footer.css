@@ -1,0 +1,44 @@
+
+footer {
+    background-color: rgb(27, 27, 27);
+}
+.footer {
+    position: absolute;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer h1 {
+    margin-top: 6px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    color: #ff6200;
+    text-align: center;
+    line-height: 0.8;
+    font-weight: bold;
+}
+
+.logoAzul {
+    font-size: 35px;
+    background: linear-gradient(90deg, #4BB1D4, #2B6F94);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.content { 
+    padding-top: 150px;
+}
+
+.content img { 
+    width: 20px;
+    padding-bottom: 50px;
+}
+
+.content h6 {
+    color: white;
+    text-align: center;
+    font-size: 13px;
+    padding: 20px 0px;
+}

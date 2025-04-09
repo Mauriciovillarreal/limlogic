@@ -6,6 +6,8 @@ import AdminPanel from './pages/AdminPanel';
 import PrivateRoute from './routes/PrivateRoute';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavbarComponent from './components/NavbarComponent/NavbarComponent';
+import Checkout from './pages/Checkout';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/checkout" element={<Checkout />} />
         <Route
           path="/admin"
           element={
@@ -25,6 +28,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer />
     </>
   );
 }

@@ -1,0 +1,32 @@
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 100px;
+
+    position: relative;
+}
+
+.cart-content-scroll {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 16px;
+}
+
+.bottomCart {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.05);
+    z-index: 10;
+}
+
+.bottomCart button {
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 0px;
+}

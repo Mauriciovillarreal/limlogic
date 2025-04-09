@@ -1,0 +1,88 @@
+.checkout {
+    background-color: #e7e7e7;
+    max-width: 100%;
+}
+
+h2 img {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    width: 40px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.checkout h2 {
+    font-size: 15px;
+    text-align: center;
+    font-weight: 3000;
+    padding-top: 15px;
+}
+
+.checkout h3 {
+    font-size: 15px;
+}
+
+.productos-checkout h5 {
+    margin-top: 5px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.container-option {
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid rgb(235, 235, 235);
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+.productos-checkout {
+    background-color: rgb(255, 255, 255);
+}
+
+.detail-checkout {
+    display: grid;
+    grid-template-columns: 20% auto auto;
+    text-align: center;
+    align-items: center;
+
+}
+
+.detail-price {
+    text-align: end;
+    margin-right: 15px;
+}
+
+.detail-item {
+    text-align: left;
+}
+
+.form-check-input[type="radio"] {
+    border-radius: 2px !important;
+}
+
+.form-check {
+    margin-bottom: 10px;
+
+}
+
+.form-check-input {
+    border: var(--bs-border-width) solid #000
+}
+
+.container-option h6 {
+    margin-left: 25px;
+    color: #929292;
+
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.checkout button {
+    background-color: #000;
+    color: white;
+    width: 100%;
+    padding: 5px;
+    border: none;
+    margin-bottom: 15px;
+}
