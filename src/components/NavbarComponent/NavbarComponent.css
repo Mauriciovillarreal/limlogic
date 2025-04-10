@@ -1,81 +1,157 @@
-
+/* Navbar base */
+nav {
+  background-color: #fff;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
 .navbar-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* Solo dos columnas: izq y der */
-    align-items: center;
-    width: 100%;
-    position: relative;
-  }
-/* Estilo del logo centrado */
-/* Centrado vertical del logo */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
 .logo-center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .logo-center h1 {
-    margin-top: 6px;
-    font-family: "Bebas Neue", sans-serif;
-    font-size: 20px;
-    color: #ff6200;
-    text-align: center;
-    line-height: 0.8;
-    font-weight: bold;
-  }
-  .logoAzul {
-    font-size: 35px;
-    background: linear-gradient(90deg, #4BB1D4, #2B6F94);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-  }
-  
-/* Estilo del carrito */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.logo-center h1 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 20px;
+  color: #F4701F;
+  text-align: center;
+  line-height: 0.8;
+  font-weight: bold;
+}
+
+.logoAzul {
+  font-size: 35px;
+  background: linear-gradient(90deg, #4BB1D4, #2B6F94);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
 .cart-button {
-    justify-self: start;
-    border: none;
-    background: #fff;
-    font-size: 20px;
-}
-
-/* Estilo del toggle (menú hamburguesa) */
-.navbar-layout .navbar-toggler {
-    justify-self: end;
-    border: none;
-}
-
-/* Opcional: ajustar el collapse para que no quede todo amontonado */
-
-
-.navbar-custom .nav-link {
-    margin-right: 1rem;
+  background: #fff;
+  border: none !important;
+  margin-top: -1px;
+  margin-left: 5px;
 }
 
 .cart-badge {
-    font-size: 14px;
-    margin-left: 4px;
-    color: #F4701F;
-    font-weight: bold;
-    border: none !important;
+  font-size: 14px;
+  margin-left: 4px;
+  color: #F4701F;
+  font-weight: bold;
+  border: none !important;
 }
 
-
-.cart-button {
-
-    border: none !important;
-    margin-top: -1px;
-    margin-left: 5px;
+/* Desktop links */
+.nav-links-desktop {
+  display: flex;
+  gap: 20px;
 }
 
-.navbar-custom {
-    position: sticky; /* o "sticky" si preferís que se quede al llegar arriba */
-    top: 0;
-    width: 100%;
-    z-index: 1;
-    background-color: #fff;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+.nav-links-desktop a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+}
+
+.nav-links-desktop a:hover {
+  color: #F4701F;
+}
+
+/* Hamburger */
+.hamburger {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.hamburger input {
+  display: none;
+}
+
+.hamburger svg {
+  height: 2em;
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line {
+  fill: none;
+  stroke: rgb(0, 0, 0);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.5;
+  transition: stroke-dasharray 600ms, stroke-dashoffset 600ms;
+}
+
+.line-top-bottom {
+  stroke-dasharray: 12 63;
+}
+
+.hamburger input:checked + svg {
+  transform: rotate(-45deg);
+}
+
+.hamburger input:checked + svg .line-top-bottom {
+  stroke-dasharray: 20 300;
+  stroke-dashoffset: -32.42;
+}
+
+/* Dropdown */
+.dropdown-menu-custom {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  align-items: flex-start;
+  background-color: white;
+  padding: 10px 20px;
+  animation: slideDown 0.3s ease forwards;
+}
+
+.dropdown-menu-custom a {
+  padding: 4px 0;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  width: 100%;
+}
+
+.dropdown-menu-custom a:hover {
+  color: #F4701F;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
   }
-  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive: mobile vs desktop */
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-links-desktop {
+    display: none;
+  }
+}
